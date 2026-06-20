@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Centollo</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <style>
+        .modal{
+            display:none;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,.6);
+            justify-content:center;
+            align-items:center;
+            z-index:999;
+        }
+
+        .modal-contenido{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            max-width:400px;
+            width:90%;
+            text-align:center;
+        }
+
+        .modal-contenido img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .cerrar{
+            float:right;
+            font-size:24px;
+            cursor:pointer;
+        }
+
+        #cerrarBtn{
+            margin-top:10px;
+            padding:8px 15px;
+            border:none;
+            background:black;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        /* ===== FOOTER LOGO CORREGIDO ===== */
+        footer{
+            text-align:center;
+        }
+
+        footer .logos{
+            margin-bottom:10px;
+        }
+
+        footer .logos img{
+            width:1000px;   /* tamaño del logo2 */
+            max-width:100%;
+            height:auto;
+            display:block;
+            margin:0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <img src="./img/logo.png" alt="Logo El Centollo" style="width:120px;display:block;margin:10px auto;">
+    <h1>Restaurante El Centollo</h1>
+</header>
+
+<nav class="nav">
+    <a href="./index.html">Inicio</a>
+    <a href="./menu.html">Menú</a>
+    <a href="./contacto.html">Contáctanos</a>
+    <a href="./ubicacion.html">Ubicación</a>
+    <a href="./reservas.html">Reservas</a>
+    <a href="./integrantes.html">Integrantes</a>
+</nav>
+
+<div class="slider">
+    <div class="img">
+        <img id="slide" src="./img/slide1.jpg" alt="Slider">
+    </div>
+
+    <div class="info">
+        <h2 id="titulo"></h2>
+        <p id="texto"></p>
+    </div>
+</div>
+
+<footer>
+    <div class="logos">
+        <!-- SOLO ESTE LOGO EN EL FOOTER -->
+        <img src="./img/logo2.jpg" alt="Logo secundario">
+    </div>
+
+    <p>Yesica Jimena López – Isabella Sarmiento Piñeros</p>
+    <p>📧 centollo@gmail.com</p>
+
+    <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modalPromo" class="modal">
+    <div class="modal-contenido">
+
+        <span class="cerrar">&times;</span>
+
+        <h2>🎉 PROMOCIÓN ESPECIAL 🎉</h2>
+
+        <img src="./img/p9.jpg" alt="Promoción">
+
+        <p>
+            ¡Bienvenido a <strong>El Centollo</strong>!
+            Esta semana disfruta de un <strong>20% de descuento</strong>.
+        </p>
+
+        <button id="cerrarBtn">Cerrar</button>
+
+    </div>
+</div>
+
+<script src="./js/slider.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const modal = document.getElementById("modalPromo");
+    const cerrar = document.querySelector(".cerrar");
+    const cerrarBtn = document.getElementById("cerrarBtn");
+
+    modal.style.display = "flex";
+
+    cerrar.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    cerrarBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+});
+</script>
+
+</body>
+</html>

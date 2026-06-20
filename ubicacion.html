@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubicación - El Centollo</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<style>
+
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+header {
+  background: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 220px;
+}
+
+/* NAV */
+nav {
+  background: black;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* TITULO */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #003049;
+}
+
+/* MAPA */
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+iframe {
+  border: 0;
+  width: 85%;
+  max-width: 900px;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER (AUMENTADO Y CORREGIDO) */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;   /* 👈 más grande */
+  margin-top: 30px;
+}
+
+/* LOGO FOOTER (TAMAÑO AUMENTADO) */
+footer .logos img {
+  width: 1000px;        /* 👈 más grande */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+/* REDES */
+.redes {
+  margin-top: 10px;
+}
+
+.redes a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: #ffd166;
+  transform: scale(1.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="img/logo.png" alt="El Centollo">
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="integrantes.html">Integrantes</a>
+</nav>
+
+<!-- TITULO -->
+<h2>📍 Ubicación del Restaurante El Centollo</h2>
+
+<!-- MAPA -->
+<div class="mapa">
+  <iframe 
+    src="https://www.google.com/maps?q=IED%20CEDID%20San%20Pablo%20Bogot%C3%A1&output=embed">
+  </iframe>
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="logos">
+        <img src="img/logo2.jpg" alt="Logo secundario">
+    </div>
+
+    <p>Yesica Jimena López – Isabella Sarmiento Piñeros</p>
+    <p>📧 centollo@gmail.com</p>
+
+    <div class="redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</footer>
+
+</body>
+</html>

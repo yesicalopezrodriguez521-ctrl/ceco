@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú - El Centollo</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 180px;
+}
+
+/* NAV */
+nav {
+    background: black;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* MENU */
+.menu {
+    max-width: 950px;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #003049;
+}
+
+/* PLATO */
+.plato {
+    display: flex;
+    background: white;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    position: relative;
+}
+
+/* IMAGEN */
+.plato img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+.plato-contenido {
+    flex: 1;
+    padding: 15px;
+}
+
+/* TITULO */
+.plato h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #003049;
+}
+
+/* INGREDIENTES */
+.ingredientes {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+/* PREPARACIÓN */
+.preparacion {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* DETALLES */
+.detalles {
+    font-size: 13px;
+    color: #555;
+}
+
+/* ICONO */
+.marcador-icono {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer .logos img {
+    width: 1000px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* REDES */
+.redes {
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: #ffd166;
+    transform: scale(1.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="integrantes.html">Integrantes</a>
+</nav>
+
+<section class="menu">
+<h2>Menú del Restaurante</h2>
+
+<!-- 1 -->
+<div class="plato">
+    <img src="img/p1.jpg">
+    <div class="plato-contenido">
+        <h3>Falsa mousse centollo</h3>
+        <p class="ingredientes">Ingredientes: huevos cocidos, palitos de cangrejo, mayonesa</p>
+        <p class="preparacion">Preparación: triturar los huevos, mezclar con palitos de cangrejo y mayonesa hasta obtener textura cremosa.</p>
+        <p class="detalles">👤 Berta Álvarez</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 2 -->
+<div class="plato">
+    <img src="img/p2.jpg">
+    <div class="plato-contenido">
+        <h3>Crema de centolla</h3>
+        <p class="ingredientes">Ingredientes: centolla, leche, cebolla, pan</p>
+        <p class="preparacion">Preparación: sofreír cebolla, agregar centolla y leche, cocinar y licuar.</p>
+        <p class="detalles">⏱️ 50 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 3 -->
+<div class="plato">
+    <img src="img/p3.jpg">
+    <div class="plato-contenido">
+        <h3>Palta rellena con centolla</h3>
+        <p class="ingredientes">Ingredientes: centolla, palta, cebolla morada, cilantro</p>
+        <p class="preparacion">Preparación: mezclar centolla con ingredientes y rellenar la palta.</p>
+        <p class="detalles">⏱️ 30 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 4 -->
+<div class="plato">
+    <img src="img/p4.jpg">
+    <div class="plato-contenido">
+        <h3>Empanadas de chupe</h3>
+        <p class="ingredientes">Ingredientes: centolla, camarones, mantequilla</p>
+        <p class="preparacion">Preparación: hacer relleno y hornear empanadas hasta dorar.</p>
+        <p class="detalles">⏱️ 2 horas</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 5 -->
+<div class="plato">
+    <img src="img/p5.jpg">
+    <div class="plato-contenido">
+        <h3>Mariscada especial</h3>
+        <p class="ingredientes">Ingredientes: centolla, gambas, conchas</p>
+        <p class="preparacion">Preparación: cocinar mariscos en caldo con especias.</p>
+        <p class="detalles">👥 4 personas</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 6 -->
+<div class="plato">
+    <img src="img/p6.jpg">
+    <div class="plato-contenido">
+        <h3>Spaghetti con centolla</h3>
+        <p class="ingredientes">Ingredientes: spaghetti, centolla, tomate, ajo</p>
+        <p class="preparacion">Preparación: hacer salsa de tomate y mezclar con pasta y centolla.</p>
+        <p class="detalles">⏱️ 40 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 7 -->
+<div class="plato">
+    <img src="img/p7.jpg">
+    <div class="plato-contenido">
+        <h3>Chupe de centolla</h3>
+        <p class="ingredientes">Ingredientes: centolla, pan, queso, leche</p>
+        <p class="preparacion">Preparación: mezclar todo y gratinar al horno.</p>
+        <p class="detalles">👤 Marta Ríos</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 8 -->
+<div class="plato">
+    <img src="img/p8.jpg">
+    <div class="plato-contenido">
+        <h3>Ensalada de centolla</h3>
+        <p class="ingredientes">Ingredientes: centolla, mango, palta, lechuga</p>
+        <p class="preparacion">Preparación: mezclar ingredientes frescos y aliñar.</p>
+        <p class="detalles">⏱️ 20 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 9 -->
+<div class="plato">
+    <img src="img/p9.jpg">
+    <div class="plato-contenido">
+        <h3>Risotto de centolla</h3>
+        <p class="ingredientes">Ingredientes: arroz, centolla, azafrán, vino blanco</p>
+        <p class="preparacion">Preparación: cocinar arroz lentamente y añadir centolla al final.</p>
+        <p class="detalles">⏱️ 40 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+<!-- 10 -->
+<div class="plato">
+    <img src="img/p10.jpg">
+    <div class="plato-contenido">
+        <h3>Croquetas de centolla</h3>
+        <p class="ingredientes">Ingredientes: centolla, leche, harina, huevo</p>
+        <p class="preparacion">Preparación: hacer bechamel, formar croquetas y freír.</p>
+        <p class="detalles">⏱️ 30 min</p>
+    </div>
+    <div class="marcador-icono">🔖</div>
+</div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        <img src="./img/logo2.jpg" alt="Logo">
+    </div>
+
+    <p class="footer-nombres">
+        Yesica Jimena López – Isabella Sarmiento Piñeros
+    </p>
+
+    <p class="footer-correo">
+        📧 centollo@gmail.com
+    </p>
+
+    <div class="footer-redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</footer>

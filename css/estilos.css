@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    background: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================
+   NAV
+========================= */
+.nav {
+    background: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffd166;
+}
+
+/* =========================
+   SLIDER
+========================= */
+.slider {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider .img img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.slider .info {
+    width: 380px;
+    background: #f5f0e6;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.slider .info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003049;
+}
+
+.slider .info p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* =========================
+   MENÚ
+========================= */
+.menu {
+    padding: 30px;
+    text-align: center;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+    color: #003049;
+}
+
+.plato {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    background: #f5f0e6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.plato img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.plato-contenido {
+    padding: 10px;
+}
+
+.plato h3 {
+    margin: 10px 0 5px;
+    color: #003049;
+}
+
+.ingredientes {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.receta {
+    font-size: 12.5px;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.plato p.detalles {
+    font-size: 13px;
+    color: #222;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+.contacto {
+    padding: 40px 20px;
+}
+
+.titulo-contacto {
+    background: #f4ecd8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.titulo-contacto h2 {
+    display: inline-block;
+    font-style: italic;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 5px 25px;
+}
+
+.titulo-contacto p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* =========================
+   FOOTER (CORREGIDO)
+========================= */
+footer {
+    background: #0c0c0c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer .logos img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.redes {
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: #ffd166;
+    transform: scale(1.2);
+}
